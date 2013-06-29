@@ -18,6 +18,17 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
+@font-face {
+  font-family: 'wisdom_script';
+  src: url('fonts/Lavanderia Regular.otf'); /* IE9 Compat Modes */
+  src: url('fonts/Lavanderia Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Lavanderia Regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/Lavanderia Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Lavanderia Regular.svg') format('svg'); /* Legacy iOS */
+}
+
+
+
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,400,800);
 
 /* =Reset
@@ -112,7 +123,7 @@ textarea {
 h1,h2,h3,h4,h5,h6 {
 	clear: both;
 	color: #49352f;
-  	font-family: 'Raleway', sans-serif;
+  	font-family: 'wisdom_script', sans-serif;
 	font-weight: normal;
 	line-height: normal;
 	margin: .75em 0;
@@ -815,7 +826,7 @@ a.rsswidget img {
 }
 .entry-title {
 	color: #f15d5d;
-  	font-family: 'Raleway', sans-serif;
+  	font-family: 'wisdom_script', sans-serif;
 	padding: 0;
 	margin: 0;
 	line-height: normal;
@@ -1188,9 +1199,9 @@ footer.entry-meta {
 .site-title {
 	clear: both;
 	color: #49352f;
-  	font-family: 'Raleway', sans-serif;
-	font-size: 48px;
-	font-size: 4.8rem;
+  	font-family: 'wisdom_script', sans-serif;
+	font-size: 60px;
+	font-size: 6rem;
 	line-height: normal;
 	margin: 0;
 }
@@ -1577,6 +1588,13 @@ ul.children .reply {
 ---------------------------------------*/
 
 @media only screen and ( min-width: 320px ) and ( max-width: 799px ) {
+
+	#masthead img {
+	clear: both;
+	display: none;
+	margin: 0 auto 1.5em;
+	max-width: 100%;
+	padding: 0;
 
 	.active-sidebar-primary-sidebar #page,
 	#page {
